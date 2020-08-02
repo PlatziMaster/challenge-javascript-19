@@ -2,7 +2,7 @@
 
 Arrays Methods.
 
-## 🎏 ¿En qué consiste?
+## 🧼 ¿En qué consiste?
 
 A continuación tendrás 13 retos con 13 métodos diferentes que podemos aplicarle a los arrays en JavaScript. La idea es que descubras cuál es el resultado de cada ejercicio para reforzar los conceptos sobre métodos de los arrays.
 
