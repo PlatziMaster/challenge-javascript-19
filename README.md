@@ -182,6 +182,17 @@ console.log(iterator.next().value);
 console.log(iterator.next().value);
 ```
 
+Resultado:
+
+```
+> [0, '🌭']
+> [1, '🍔']
+```
+
+Explicación:
+
+`entries()` es un método que retorna un objeto iterador que consiste en pares `[key, value]`. Con `iterator.next()`, se obtiene el siguiente par (array) con el índice y valor en el arreglo. Este método no modifica el arreglo original.
+
 ### 8. map()
 
 ¿Cuál es el resultado del siguiente código?
@@ -192,6 +203,16 @@ const multiplication = numbers.map(n => n * 3);
 
 console.log(multiplication);
 ```
+
+Resultado:
+
+```
+> [96, 135, 258, 297]
+```
+
+Explicación:
+
+El método `map()` retorna un nuevo arreglo con el resultado de aplicar una función (callback) a cada uno de los elementos del arreglo original. `map()` no modifica el arreglo original. En este caso, cada elemento del arreglo es multiplicado por 3 y agregado al nuevo arreglo.
 
 ### 9. reverse()
 
@@ -205,6 +226,17 @@ console.log(reversed);
 console.log(weather);
 ```
 
+Resultado:
+
+```
+> ['🌧', '🌤']
+> ['🌧', '🌤']
+```
+
+Explicación:
+
+El método `reverse()` retorna el arreglo con el orden invertido. Este método modifica el arreglo original, por lo que `weather` y `reversed` tienen los mismos elementos.
+
 ### 10. join()
 
 ¿Cuál es el resultado del siguiente código?
@@ -217,6 +249,17 @@ console.log(phrase.join(''));
 console.log(phrase.join('-'));
 ```
 
+Resultado:
+
+```
+> "Nunca,Pares,De,Aprender"
+> "NuncaParesDeAprender"
+> "Nunca-Pares-De-Aprender"
+```
+
+Explicación:
+El médoto `join()` concatena los elementos de un arreglo separados con el separador que se le mande como parámetro y retorna dicho string. Si no recibe algún parámetro, los elementos serán separados mediante comas (,). Si se quiere unir los elementos sin espacios o caracteres, el separador debe ser un string vacío ('').
+
 ### 11. find()
 
 ¿Cuál es el resultado del siguiente código?
@@ -227,6 +270,16 @@ const found = primeNumbers.find(number => number < 200);
 
 console.log(found);
 ```
+
+Resultado:
+
+```
+> 199
+```
+
+Explicación:
+
+El método `find()` retorna el valor de la primera ocurrencia del elemento que cumple una condición dada. Si no lo encuentra, el valor de retorno es `undefined`. En este caso, el primer número que sea menor a 200 es 199.
 
 ### 12. fill()
 
@@ -240,6 +293,18 @@ console.log(pairNumbers.fill(34, 1));
 console.log(pairNumbers.fill(6));
 ```
 
+Resultado:
+
+```
+> [2, 10, 0, 0]
+> [2, 34, 34, 34]
+> [6, 6, 6, 6]
+```
+
+Explicación:
+
+El método `fill()` modifica los elementos del arreglo con un solo valor y retorna ese nuevo arreglo modificado. Puede recibir tres parámetros: el **valor**, el **índice inicial** (opcional) a partir del cuál se llena el arreglo con el valor dado y el **índice final** (opcional) hasta donde se llena el arreglo. Cuando no se tienen el índice inicial, el valor por defecto es 0 y si no está definido el índice final, el valor por defecto es el tamaño del arreglo.
+
 ### 13. reduce()
 
 ¿Cuál es el resultado del siguiente código?
@@ -250,6 +315,23 @@ console.log(pairNumbers.fill(6));
 })
 ```
 
+Resultado:
+
+```
+> 10
+```
+
+Explicación:
+
+El método `reduce()` ejecuta una función para cada elemento del arreglo y lo reduce a un sólo valor. Cuando se ejecuta la función en un elemento del arreglo (`current`), el valor que se retorna se asigna a `accumulator`, el cual es recordado en la siguiente iteración. El último valor de `accumulator` es el que se retorna. En el código:
+
+```
+1era iteración -> 1
+2da  iteración -> 3
+3era iteración -> 6
+4ta  iteración -> 10
+
+``` 
 
 ## 🧼 Pasos a seguir:
 
