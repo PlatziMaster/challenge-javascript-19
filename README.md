@@ -43,7 +43,7 @@ Resultado:
 ```
 
 Explicación:
-El método `shift` remueve el primer elemento de un arreglo y retorna dicho elemento, modificando el arreglo original.
+El método `shift()` remueve el primer elemento de un arreglo y retorna dicho elemento, modificando el arreglo original.
 
 ### 2. unshift()
 
@@ -63,7 +63,7 @@ Resultado:
 ```
 
 Explicación:
-El método `unshift` añade nuevos elementos al principio del arreglo. Primero, cuando se agrega el elemento "Facundo", el arreglo queda así:
+El método `unshift()` añade nuevos elementos al principio del arreglo. Primero, cuando se agrega el elemento "Facundo", el arreglo queda así:
 
 ```
 ["Facundo", "Oscar"]
@@ -97,7 +97,7 @@ Resultado:
 
 Explicación:
 
-El método `concat` combina uno o varios arreglos, retornando el nuevo arreglo. `concat` no modifica los arreglos originales.
+El método `concat()` combina uno o varios arreglos, retornando el nuevo arreglo. `concat()` no modifica los arreglos originales.
 
 ### 4. push()
 
@@ -120,7 +120,7 @@ Resultado:
 
 Explicación:
 
-El método `push` añade nuevos elementos al final del arreglo y retorna el nuevo tamaño del arreglo. En este caso, es de 4 elementos.
+El método `push()` añade uno o más nuevos elementos al final del arreglo y retorna el nuevo tamaño del arreglo. En este caso, es de 4 elementos.
 
 ### 5. pop()
 
