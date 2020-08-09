@@ -35,6 +35,16 @@ console.log(acidFruits);
 console.log(modification); 
 ```
 
+Resultado:
+
+```
+> ["🍋", "🍊"]
+> "🍓"
+```
+
+Explicación:
+El método `shift` remueve el primer elemento de un arreglo y retorna dicho elemento, modificando el arreglo original.
+
 ### 2. unshift()
 
 ¿Cuál es el resultado del siguiente código?
@@ -45,6 +55,27 @@ teachers.unshift("Facundo");
 teachers.unshift("Nicolas", "Pablo");
 console.log(teachers);
 ```
+
+Resultado:
+
+```
+> ["Nicolás", "Pablo", "Facundo", "Oscar"]
+```
+
+Explicación:
+El método `unshift` añade nuevos elementos al principio del arreglo. Primero, cuando se agrega el elemento "Facundo", el arreglo queda así:
+
+```
+["Facundo", "Oscar"]
+```
+
+Luego, al agregar los elementos "Nicolás" y "Pablo", el arreglo finalmente queda así:
+
+```
+["Nicolás", "Pablo", "Facundo", "Oscar"]
+```
+
+Este método retorna el nuevo tamaño del arreglo.
 
 ### 3. concat()
 
@@ -58,6 +89,16 @@ const transportationModes = air.concat(rail);
 console.log(transportationModes);
 ```
 
+Resultado:
+
+```
+> ["🚀", "🚊"]
+```
+
+Explicación:
+
+El método `concat` combina uno o varios arreglos, retornando el nuevo arreglo. `concat` no modifica los arreglos originales.
+
 ### 4. push()
 
 ¿Cuál es el resultado del siguiente código?
@@ -70,6 +111,17 @@ console.log(players);
 console.log(totalPlayers);
 ```
 
+Resultado:
+
+```
+> ["Sofía", "Laura", "Juan", "Mateo"]
+> 4
+```
+
+Explicación:
+
+El método `push` añade nuevos elementos al final del arreglo y retorna el nuevo tamaño del arreglo. En este caso, es de 4 elementos.
+
 ### 5. pop()
 
 ¿Cuál es el resultado del siguiente código?
@@ -81,6 +133,17 @@ const totalComputers = computers.pop();
 console.log(computers);
 console.log(totalComputers);
 ```
+
+Resultado:
+
+```
+> ["💻"]
+> "🖥"
+```
+
+Explicación:
+
+El método `pop()` remueve el último elemento del arreglo y retorna el elemento eliminado. Modifica el arreglo original y no recibe parámetros.
 
 ### 6. splice()
 
