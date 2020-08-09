@@ -155,6 +155,21 @@ days.splice(1, 0, 'Wed');
 console.log(days);
 ```
 
+Resultado:
+```
+> ['Mon', 'Wed', 'Tue', 'Wed', 'Thu', 'Fri']
+```
+
+Explicación:
+
+El método `splice()` agrega nuevos elementos o elimina elementos existentes de un arreglo. Puede recibir 3 parámetros: 
+1. El **índice** a partir del cuál se empieza a modificar el contenido del arreglo **(obligatorio)**
+2. El **número** de elementos a eliminar a partir del índice dado.
+3. **Uno o más elementos separados por comas** que serán insertados en el arreglo desde el índice dado.
+
+En este caso, se agrega el elemento 'Wed' en el índice 1 y no se eliminan elementos.
+`splice()` modifica el arreglo original.
+
 ### 7. entries()
 
 ¿Cuál es el resultado del siguiente código?
