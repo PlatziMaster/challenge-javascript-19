@@ -167,7 +167,7 @@ El método `splice()` agrega nuevos elementos o elimina elementos existentes de 
 2. El **número** de elementos a eliminar a partir del índice dado **(opcional)**.
 3. **Uno o más elementos separados por comas** que serán insertados en el arreglo desde el índice dado **(opcional)**.
 
-En este caso, se agrega el elemento 'Wed' en el índice 1 y no se eliminan elementos.
+En este caso, se agrega el elemento `'Wed'` en el índice 1 y no se eliminan elementos.
 `splice()` modifica el arreglo original.
 
 ### 7. entries()
@@ -279,7 +279,7 @@ Resultado:
 
 Explicación:
 
-El método `find()` retorna el valor de la primera ocurrencia del elemento que cumple una condición dada. Si no lo encuentra, el valor de retorno es `undefined`. En este caso, el primer número que sea menor a 200 es 199 (incluso si hubieran otros elementos que sean menor que 200 en el arreglo).
+El método `find()` retorna el valor de la primera ocurrencia del elemento que cumple una condición dada. Si no lo encuentra, el valor de retorno es `undefined`. En este caso, el primer número que es menor a 200 es 199 (incluso si hubieran otros elementos que sean menor que 200 en el arreglo).
 
 ### 12. fill()
 
