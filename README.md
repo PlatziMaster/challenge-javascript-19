@@ -63,7 +63,7 @@ Resultado:
 ```
 
 Explicación:
-El método `unshift()` añade nuevos elementos al principio del arreglo. Primero, cuando se agrega el elemento "Facundo", el arreglo queda así:
+El método `unshift()` añade nuevos elementos al principio del arreglo, es decir, modifica el arreglo original. Primero, cuando se agrega el elemento "Facundo", el arreglo queda así:
 
 ```
 ["Facundo", "Oscar"]
@@ -97,7 +97,7 @@ Resultado:
 
 Explicación:
 
-El método `concat()` combina uno o varios arreglos, retornando el nuevo arreglo. `concat()` no modifica los arreglos originales.
+El método `concat()` combina dos o varios arreglos o valores, retornando el nuevo arreglo. `concat()` no modifica los arreglos originales que son pasados como parámetros.
 
 ### 4. push()
 
@@ -120,7 +120,7 @@ Resultado:
 
 Explicación:
 
-El método `push()` añade uno o más nuevos elementos al final del arreglo y retorna el nuevo tamaño del arreglo. En este caso, es de 4 elementos.
+El método `push()` añade uno o más nuevos elementos al final del arreglo y retorna el nuevo tamaño del arreglo. Así que la longitud del arreglo es de 4 elementos. Este método modifica el arreglo original.
 
 ### 5. pop()
 
@@ -164,8 +164,8 @@ Explicación:
 
 El método `splice()` agrega nuevos elementos o elimina elementos existentes de un arreglo. Puede recibir 3 parámetros: 
 1. El **índice** a partir del cuál se empieza a modificar el contenido del arreglo **(obligatorio)**
-2. El **número** de elementos a eliminar a partir del índice dado.
-3. **Uno o más elementos separados por comas** que serán insertados en el arreglo desde el índice dado.
+2. El **número** de elementos a eliminar a partir del índice dado **(opcional)**.
+3. **Uno o más elementos separados por comas** que serán insertados en el arreglo desde el índice dado **(opcional)**.
 
 En este caso, se agrega el elemento 'Wed' en el índice 1 y no se eliminan elementos.
 `splice()` modifica el arreglo original.
@@ -191,7 +191,7 @@ Resultado:
 
 Explicación:
 
-`entries()` es un método que retorna un objeto iterador que consiste en pares `[key, value]`. Con `iterator.next()`, se obtiene el siguiente par (array) con el índice y valor en el arreglo. Este método no modifica el arreglo original.
+`entries()` es un método que retorna un **objeto iterador** que consiste en pares `[key, value]`. Con `iterator.next()`, se obtiene el siguiente par (array) con el índice y valor en el arreglo. Este método no modifica el arreglo original.
 
 ### 8. map()
 
@@ -235,7 +235,7 @@ Resultado:
 
 Explicación:
 
-El método `reverse()` retorna el arreglo con el orden invertido. Este método modifica el arreglo original, por lo que `weather` y `reversed` tienen los mismos elementos.
+El método `reverse()` retorna el arreglo con el orden invertido, de manera que el primer elemento se convierte en el último elemento y viceversa. Este método modifica el arreglo original, por lo que `weather` y `reversed` tienen los mismos elementos.
 
 ### 10. join()
 
@@ -258,7 +258,7 @@ Resultado:
 ```
 
 Explicación:
-El médoto `join()` concatena los elementos de un arreglo separados con el separador que se le mande como parámetro y retorna dicho string. Si no recibe algún parámetro, los elementos serán separados mediante comas (,). Si se quiere unir los elementos sin espacios o caracteres, el separador debe ser un string vacío ('').
+El médoto `join()` concatena los elementos de un arreglo separados mediante el separador que se le mande como parámetro y retorna dicho string. Si no recibe algún parámetro, los elementos serán separados mediante comas (,). Si se quiere unir los elementos sin espacios o caracteres, el separador debe ser un string vacío ('').
 
 ### 11. find()
 
@@ -279,7 +279,7 @@ Resultado:
 
 Explicación:
 
-El método `find()` retorna el valor de la primera ocurrencia del elemento que cumple una condición dada. Si no lo encuentra, el valor de retorno es `undefined`. En este caso, el primer número que sea menor a 200 es 199.
+El método `find()` retorna el valor de la primera ocurrencia del elemento que cumple una condición dada. Si no lo encuentra, el valor de retorno es `undefined`. En este caso, el primer número que sea menor a 200 es 199 (incluso si hubieran otros elementos que sean menor que 200 en el arreglo).
 
 ### 12. fill()
 
@@ -303,7 +303,7 @@ Resultado:
 
 Explicación:
 
-El método `fill()` modifica los elementos del arreglo con un solo valor y retorna ese nuevo arreglo modificado. Puede recibir tres parámetros: el **valor**, el **índice inicial** (opcional) a partir del cuál se llena el arreglo con el valor dado y el **índice final** (opcional) hasta donde se llena el arreglo. Cuando no se tienen el índice inicial, el valor por defecto es 0 y si no está definido el índice final, el valor por defecto es el tamaño del arreglo.
+El método `fill()` modifica los elementos del arreglo con un solo valor y retorna ese nuevo arreglo modificado. Puede recibir tres parámetros: el **valor** (obligatorio), el **índice inicial** (opcional) a partir del cuál se llena el arreglo con el valor dado y el **índice final** (opcional) hasta donde se llena el arreglo. Cuando no se tienen el índice inicial, el valor por defecto es 0 y si no está definido el índice final, el valor por defecto es el tamaño del arreglo.
 
 ### 13. reduce()
 
@@ -326,6 +326,8 @@ Explicación:
 El método `reduce()` ejecuta una función para cada elemento del arreglo y lo reduce a un sólo valor. Cuando se ejecuta la función en un elemento del arreglo (`current`), el valor que se retorna se asigna a `accumulator`, el cual es recordado en la siguiente iteración. El último valor de `accumulator` es el que se retorna. En el código:
 
 ```
+Valor que se retorna en cada iteración
+
 1era iteración -> 1
 2da  iteración -> 3
 3era iteración -> 6
