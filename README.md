@@ -163,7 +163,7 @@ Resultado:
 Explicación:
 
 El método `splice()` agrega nuevos elementos o elimina elementos existentes de un arreglo. Puede recibir 3 parámetros: 
-1. El **índice** a partir del cuál se empieza a modificar el contenido del arreglo **(obligatorio)**
+1. El **índice** a partir del cuál se empieza a modificar el contenido del arreglo.
 2. El **número** de elementos a eliminar a partir del índice dado **(opcional)**.
 3. **Uno o más elementos separados por comas** que serán insertados en el arreglo desde el índice dado **(opcional)**.
 
@@ -303,7 +303,7 @@ Resultado:
 
 Explicación:
 
-El método `fill()` modifica los elementos del arreglo con un solo valor y retorna ese nuevo arreglo modificado. Puede recibir tres parámetros: el **valor** (obligatorio), el **índice inicial** (opcional) a partir del cuál se llena el arreglo con el valor dado y el **índice final** (opcional) hasta donde se llena el arreglo. Cuando no se tienen el índice inicial, el valor por defecto es 0 y si no está definido el índice final, el valor por defecto es el tamaño del arreglo.
+El método `fill()` modifica los elementos del arreglo con un solo valor y retorna ese nuevo arreglo modificado. Puede recibir tres parámetros: el **valor**, el **índice inicial** (opcional) a partir del cuál se llena el arreglo con el valor dado y el **índice final** (opcional) hasta donde se llena el arreglo. Cuando no se tienen el índice inicial, el valor por defecto es 0 y si no está definido el índice final, el valor por defecto es el tamaño del arreglo.
 
 ### 13. reduce()
 
