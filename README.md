@@ -162,9 +162,9 @@ Resultado:
 
 Explicación:
 
-El método `splice()` agrega nuevos elementos o elimina elementos existentes de un arreglo. Puede recibir 3 parámetros: 
+El método `splice()` agrega nuevos elementos o elimina elementos existentes de un arreglo y retorna un arreglo con los elementos eliminados. Puede recibir 3 parámetros: 
 1. El **índice** a partir del cuál se empieza a modificar el contenido del arreglo.
-2. El **número** de elementos a eliminar a partir del índice dado **(opcional)**.
+2. El **número** de elementos a eliminar a partir del índice dado **(opcional)**. Si no se da este valor, los elementos serás removidos a partir del índice dado hasta el final del arreglo.
 3. **Uno o más elementos separados por comas** que serán insertados en el arreglo desde el índice dado **(opcional)**.
 
 En este caso, se agrega el elemento `'Wed'` en el índice 1 y no se eliminan elementos.
