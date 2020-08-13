@@ -29,10 +29,10 @@ A continuación tendrás 13 retos con 13 métodos diferentes que podemos aplicar
 
 ```
 var acidFruits = ["🍓", "🍋", "🍊"];
-var modification = acidFruits.shift(); 
+var modification = acidFruits.shift();
 
-console.log(acidFruits);
-console.log(modification); 
+console.log(acidFruits); //-----['🍋', '🍊']
+console.log(modification); //---'🍓'
 ```
 
 ### 2. unshift()
@@ -43,7 +43,7 @@ console.log(modification);
 var teachers = ["Oscar"];
 teachers.unshift("Facundo");
 teachers.unshift("Nicolas", "Pablo");
-console.log(teachers);
+console.log(teachers); //---['Nicolas','Pablo','Facundo','Oscar']
 ```
 
 ### 3. concat()
@@ -55,7 +55,7 @@ const air = ["🚀"];
 const rail = ["🚊"];
 const transportationModes = air.concat(rail);
 
-console.log(transportationModes);
+console.log(transportationModes);//---['🚀','🚊']
 ```
 
 ### 4. push()
@@ -66,8 +66,8 @@ console.log(transportationModes);
 const players = ["Sofía", "Laura"];
 const totalPlayers = players.push("Juan", "Mateo");
 
-console.log(players);
-console.log(totalPlayers);
+console.log(players);// -----['Sofia', 'Laura', 'Juan', 'Mateo']
+console.log(totalPlayers);//-4
 ```
 
 ### 5. pop()
@@ -78,8 +78,8 @@ console.log(totalPlayers);
 const computers = ["💻", "🖥"];
 const totalComputers = computers.pop();
 
-console.log(computers);
-console.log(totalComputers);
+console.log(computers);// -----['💻']
+console.log(totalComputers);//-'🖥'
 ```
 
 ### 6. splice()
@@ -89,7 +89,7 @@ console.log(totalComputers);
 ```
 const days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'];
 days.splice(1, 0, 'Wed');
-console.log(days);
+console.log(days);//---['Mon', 'Wed', 'Tue', 'Wed', 'Thu', 'Fri']
 ```
 
 ### 7. entries()
@@ -100,8 +100,8 @@ console.log(days);
 const fastFood = ['🌭', '🍔', '🍟', '🍕'];
 const iterator = fastFood.entries();
 
-console.log(iterator.next().value);
-console.log(iterator.next().value);
+console.log(iterator.next().value);//--[0,'🌭']
+console.log(iterator.next().value);//--[1,'🍔']
 ```
 
 ### 8. map()
@@ -112,7 +112,7 @@ console.log(iterator.next().value);
 const numbers = [32, 45, 86, 99];
 const multiplication = numbers.map(n => n * 3);
 
-console.log(multiplication);
+console.log(multiplication);//---[ 96, 135, 258, 297 ]
 ```
 
 ### 9. reverse()
@@ -120,8 +120,8 @@ console.log(multiplication);
 ¿Cuál es el resultado del siguiente código?
 
 ```
-const weather = ['🌤', '🌧'];
-const reversed = weather.reverse();
+const weather = ['🌤', '🌧'];//----------[ '🌧', '🌤' ]
+const reversed = weather.reverse();//----[ '🌧', '🌤' ]
 
 console.log(reversed);
 console.log(weather);
@@ -134,9 +134,9 @@ console.log(weather);
 ```
 const phrase = ['Nunca', 'Pares', 'De', 'Aprender'];
 
-console.log(phrase.join());
-console.log(phrase.join(''));
-console.log(phrase.join('-'));
+console.log(phrase.join());//-----Nunca,Pares,De,Aprender
+console.log(phrase.join(''));//---NuncaParesDeAprender
+console.log(phrase.join('-'));//--Nunca-Pares-De-Aprender
 ```
 
 ### 11. find()
@@ -147,7 +147,7 @@ console.log(phrase.join('-'));
 const primeNumbers = [199, 211, 223, 227, 229, 233];
 const found = primeNumbers.find(number => number < 200);
 
-console.log(found);
+console.log(found);//--199
 ```
 
 ### 12. fill()
@@ -157,9 +157,9 @@ console.log(found);
 ```
 const pairNumbers = [2, 10, 14, 98];
 
-console.log(pairNumbers.fill(0, 2, 4));
-console.log(pairNumbers.fill(34, 1));
-console.log(pairNumbers.fill(6));
+console.log(pairNumbers.fill(0, 2, 4));//--[ 2, 10, 0, 0 ]
+console.log(pairNumbers.fill(34, 1));//----[ 2, 34, 34, 34 ]
+console.log(pairNumbers.fill(6));//--------[ 6, 6, 6, 6 ]
 ```
 
 ### 13. reduce()
@@ -169,7 +169,7 @@ console.log(pairNumbers.fill(6));
 ```
 [0, 1, 2, 3, 4].reduce(function(accumulator, currentValue) {
   return accumulator + currentValue
-})
+})//----10
 ```
 
 
