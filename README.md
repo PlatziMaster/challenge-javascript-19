@@ -33,6 +33,9 @@ var modification = acidFruits.shift();
 
 console.log(acidFruits);
 console.log(modification); 
+
+🍓 shift elimina el elemento seleccionado al principio del array
+
 ```
 
 ### 2. unshift()
@@ -44,6 +47,9 @@ var teachers = ["Oscar"];
 teachers.unshift("Facundo");
 teachers.unshift("Nicolas", "Pablo");
 console.log(teachers);
+
+según el orden de las funciones se agrego al array a facundo, y luego a Nicolas y Pablo
+
 ```
 
 ### 3. concat()
@@ -56,6 +62,9 @@ const rail = ["🚊"];
 const transportationModes = air.concat(rail);
 
 console.log(transportationModes);
+
+esta funcion concatena estos dos strings, a const 'air' le concatena 'rail'
+
 ```
 
 ### 4. push()
@@ -68,6 +77,9 @@ const totalPlayers = players.push("Juan", "Mateo");
 
 console.log(players);
 console.log(totalPlayers);
+
+push al contrario de unshift coloca en el array los dos elementos nuevos al final del mismo
+
 ```
 
 ### 5. pop()
@@ -80,6 +92,8 @@ const totalComputers = computers.pop();
 
 console.log(computers);
 console.log(totalComputers);
+
+pop quita el elemento de al final del array
 ```
 
 ### 6. splice()
@@ -90,6 +104,10 @@ console.log(totalComputers);
 const days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'];
 days.splice(1, 0, 'Wed');
 console.log(days);
+
+splice quita los elementos seleccionado de 0 - 5 en este caso quita el martes, miercoles, y viernes.
+
+
 ```
 
 ### 7. entries()
@@ -102,6 +120,8 @@ const iterator = fastFood.entries();
 
 console.log(iterator.next().value);
 console.log(iterator.next().value);
+
+entries retorna un nuevo objeto a partir del array que seleccionemos, por ejemplo aqui estamos creado un nuevo objeto a partir de 🌭 y 🍔
 ```
 
 ### 8. map()
@@ -113,6 +133,9 @@ const numbers = [32, 45, 86, 99];
 const multiplication = numbers.map(n => n * 3);
 
 console.log(multiplication);
+
+map transforma los numeros de acuerdo a los parametros que le pongamos en la funcion que se describe arriba
+
 ```
 
 ### 9. reverse()
@@ -125,6 +148,9 @@ const reversed = weather.reverse();
 
 console.log(reversed);
 console.log(weather);
+
+retorna en reversa la lista del array
+
 ```
 
 ### 10. join()
@@ -137,6 +163,12 @@ const phrase = ['Nunca', 'Pares', 'De', 'Aprender'];
 console.log(phrase.join());
 console.log(phrase.join(''));
 console.log(phrase.join('-'));
+
+en el primer caso, no pasa nada, solo retorna las palabrascon una coma.
+en el segundo caso solamente elimina las comas que hay entre cada uno
+en el tercer caso entre cada palabra pone una -
+
+
 ```
 
 ### 11. find()
@@ -148,6 +180,9 @@ const primeNumbers = [199, 211, 223, 227, 229, 233];
 const found = primeNumbers.find(number => number < 200);
 
 console.log(found);
+
+con find en esta funcion estamos retornando numeros menores a 200
+
 ```
 
 ### 12. fill()
@@ -157,9 +192,10 @@ console.log(found);
 ```
 const pairNumbers = [2, 10, 14, 98];
 
-console.log(pairNumbers.fill(0, 2, 4));
-console.log(pairNumbers.fill(34, 1));
-console.log(pairNumbers.fill(6));
+console.log(pairNumbers.fill(0, 2, 4));  // llena de ceros desde la posiscion 2 a la 4 
+console.log(pairNumbers.fill(34, 1));   // llena de 34 desde la posiscion 1
+console.log(pairNumbers.fill(6));     // llena de 6 el array
+
 ```
 
 ### 13. reduce()
@@ -170,6 +206,9 @@ console.log(pairNumbers.fill(6));
 [0, 1, 2, 3, 4].reduce(function(accumulator, currentValue) {
   return accumulator + currentValue
 })
+
+suma todos los numeros dando como resultado 10
+
 ```
 
 
